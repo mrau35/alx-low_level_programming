@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
-				res = 10*a + b;
+				res = 10 * a + b;
 				if (res < 89)
 				{
 					putchar(',');
