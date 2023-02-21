@@ -1,11 +1,14 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * sum_of_multiples - a function that prints the sum of multiples of 3 & 5
- * @n: number input
  *
  * a program that prints the sum of multiples of 3 & 5
- * Return: Always 0 (Success)
+ * return: Always 0 (Success)
+ */
+/**
+ * sum_of_multiples - a function that prints the sum of multiples of 3 & 5
+ * @n: number input
+ * return: the sum of multiples 
  */
 int sum_of_multiples(int n)
 {
