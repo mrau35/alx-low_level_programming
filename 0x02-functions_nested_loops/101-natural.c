@@ -3,6 +3,8 @@
  * main - Entry point
  * sum_of_multiples - a function that prints the sum of multiples of 3 & 5
  * @n: number input
+ *
+ * a program that prints the sum of multiples of 3 & 5
  * Return: Always 0 (Success)
  */
 int sum_of_multiples(int n)
