@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include "main.h"
 /**
- * sumof_multiples - a function that prints the sum of multiples of 3 & 5
+ * main - a function that prints the sum of multiples of 3 & 5
  * @n: number inpu
  * Return: Always 0 (Success)
  */
-int sumof_multiples(int n)
+int main(int n)
 {
 	int i, sum;
 	sum = 0;
