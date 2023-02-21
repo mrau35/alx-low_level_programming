@@ -2,8 +2,8 @@
 
 /**
  * a function that checks for lowercase character
- * Return: 1 if int c is letter, lowercase or uppercase
- * Return: 0 otherwise
+ * Return: 1 if int c is letter, lowercase or uppercase 0 otherwise
+ * @c: input
  */
 
 int _isalpha(int c)
