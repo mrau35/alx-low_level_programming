@@ -27,4 +27,5 @@ int main(void)
 	res = sum_of_multiples(1024);
 
 	printf("%d", res);
+	return (0);
 }
