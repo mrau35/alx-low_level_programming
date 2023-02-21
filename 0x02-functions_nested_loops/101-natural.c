@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * sum_of_multiples - a function that prints the sum of multiples of 3 & 5
- * main - entry function
+ * @main - entry function
  * @n: number input
  * Return: Always 0 (Success)
  */
