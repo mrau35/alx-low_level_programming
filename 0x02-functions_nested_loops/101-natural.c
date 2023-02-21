@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
  * sum_of_multiples - a function that prints the sum of multiples of 3 & 5
+ * main: entry function
  * @n: number input
- * main - entry function
  * Return: Always 0 (Success)
  */
 int sum_of_multiples(int n)
 {
 	int i, sum;
+
 	sum = 0;
 
 	for (i = 0; i < n; i++)
