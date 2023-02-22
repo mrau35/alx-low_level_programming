@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * sum_of_multiples - a function that prints,
+ * main - a function that prints,
  * the sum of multiples of 3 & 5
  * @n: number input
  * Return: the sum of multiples 
  */
 
-int sum_of_multiples(int n)
+int main(int n)
 {
 	int i, total;
 	total = 0;
