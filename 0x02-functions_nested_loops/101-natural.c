@@ -8,7 +8,7 @@
  * Return: the sum of multiples 
  */
 
-int sum_of_multiples(int n);
+int sum_of_multiples(int n)
 {
 	int i, total;
 
