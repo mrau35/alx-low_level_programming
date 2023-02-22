@@ -7,9 +7,8 @@
  */
 int sum_of_multiples(int n)
 {
-	int i, sum;
-
-	sum = 0;
+	int i;
+	int sum = 0;
 
 	for (i = 0; i < n; i++)
 	{
