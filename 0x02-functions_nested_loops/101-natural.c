@@ -8,10 +8,9 @@
  * Return: the sum of multiples 
  */
 
-int main(int n)
+int sum_of_multiples(int n);
 {
 	int i, total;
-	total = 0;
 
 	for (i = 0; i < n; i++)
 	{
