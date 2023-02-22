@@ -12,7 +12,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	int lipyear;
+	int leapyear;
 
 	if ((year % 4 == 0 || year % 400 == 0) && !(year % 100 == 0))
 	{
@@ -26,9 +26,9 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		lipyear = year % 10;
+		leapyear = year % 10;
 
-		if (lipyear == 0 || lipyear == 4 || lipyear == 8)
+		if (leapyear == 0 || leapyear == 4 || leapyear == 8)
 		{
 			if (month == 2 && day == 60)
 			{
@@ -37,7 +37,7 @@ void print_remaining_days(int month, int day, int year)
 			}
 
 		}
-		else if (month == 2 && day == 60)
+		else if (month == 2 && day > 59)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 		}
