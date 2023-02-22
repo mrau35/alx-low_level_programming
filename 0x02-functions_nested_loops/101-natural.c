@@ -7,15 +7,15 @@
  */
 int sum_of_multiples(int n)
 {
-	int i;
-	int sum = 0;
+	int i, total;
+	int total = 0;
 
 	for (i = 0; i < n; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
 		{
-			sum = sum + i;
+			total = total + i;
 		}
 	}
-	return (sum);
+	return (total);
 }
