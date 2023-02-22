@@ -11,7 +11,7 @@
 int sum_of_multiples(int n)
 {
 	int i, total;
-	int total = 0;
+	total = 0;
 
 	for (i = 0; i < n; i++)
 	{
