@@ -10,20 +10,23 @@
 int main(void)
 {
 	int i;
+	char fizz[5] = "Fizz";
+	char buzz[5] = "Buzz";
+	char fizzBuzz[10] = "FizzBuzz"; 
 
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("FizzBuzz");
+			printf("%s", fizzBuzz);
 		}
 		else if ((i % 3) == 0)
 		{
-			printf("Fizz");
+			printf("%s", fizz);
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("Buzz");
+			printf("%s", buzz);
 		}
 		else
 		{
