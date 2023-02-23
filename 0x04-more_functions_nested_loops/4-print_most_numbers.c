@@ -7,9 +7,7 @@
 
 void print_most_numbers(void)
 {
-	int ch;
-
-	ch = '0';
+	int ch = '0';
 
 	while (ch <= '9')
 	{
