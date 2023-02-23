@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers.c - a funcion prints number from 0 to 9
- * Return (1) always success
+ * Return: always 0 (success)
  */
 
 void print_most_numbers(void)
