@@ -2,6 +2,7 @@
 
 /**
  * print_most_numbers - a funcion prints number from 0 to 9
+ *
  * Return: always 0 (success)
  */
 
