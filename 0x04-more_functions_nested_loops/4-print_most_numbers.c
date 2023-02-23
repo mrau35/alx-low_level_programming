@@ -16,14 +16,13 @@ void print_most_numbers(void)
 		if(ch == '2' || ch == '4')
 		{
 			ch++;
-
 			continue;
 		}
 		else
 		{
 			_putchar(ch);
+			ch++;
 		}
-		ch++;
 	}
 	_putchar('\n');
 }
