@@ -18,21 +18,20 @@ int main(void)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("%s", fizzBuzz);
+			printf("%s ", fizzBuzz);
 		}
 		else if ((i % 3) == 0)
 		{
-			printf("%s", fizz);
+			printf("%s ", fizz);
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("%s", buzz);
+			printf("%s ", buzz);
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
-		printf(" ");
 	}
 	printf("\n");
 	return (0);
