@@ -7,12 +7,11 @@
  * Return: the largest prime number
  */
 
-int main()
+int main(void)
 {
 	long int lpn;
 
 	long int div = 2;
-	
 	long int n = 612852475143;
 
 	while (n != 0)
