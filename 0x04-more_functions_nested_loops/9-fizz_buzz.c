@@ -11,6 +11,7 @@ int main(void)
 {
 	int i;
 
+	char sp[] = " ";
 	char fizz[] = "Fizz";
 	char buzz[] = "Buzz";
 	char fizzBuzz[] = "FizzBuzz";
@@ -19,19 +20,23 @@ int main(void)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("%s ", fizzBuzz);
+			printf("%s", fizzBuzz);
 		}
 		else if ((i % 3) == 0)
 		{
-			printf("%s ", fizz);
+			printf("%s", fizz);
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("%s ", buzz);
+			printf("%s", buzz);
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+		}
+		if (i < 100)
+		{
+			printf("%s", sp);
 		}
 	}
 	printf("\n");
