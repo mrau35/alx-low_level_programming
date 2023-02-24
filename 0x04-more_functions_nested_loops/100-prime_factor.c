@@ -3,7 +3,7 @@
 
 /**
  * main -a function that prints the largest prime number
- * @n: a number input
+ * break: exit from the loop if n = 1
  * Return: the largest prime number
  */
 
