@@ -11,7 +11,9 @@ int main()
 {
 	long int lpn;
 
-	long int div = 2, n = 612852475143;
+	long int div = 2;
+	
+	long int n = 612852475143;
 
 	while (n != 0)
 	{
@@ -22,6 +24,7 @@ int main()
 		else
 		{
 			lpn = n;
+
 			n = n / div;
 
 			if (n == 1)
