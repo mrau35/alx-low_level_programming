@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcpy - a function that copies the string
+ * _strcpy - a function that copies the string
  * @dest: destination array
  * @src: source array
  */
