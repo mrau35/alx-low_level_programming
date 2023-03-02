@@ -23,7 +23,7 @@ void reverse_array(int *a, int n)
 		tmp = *end;
 		*end = *begin;
 		*begin = tmp;
-		`begin++;
+		begin++;
 		end--;
 	}
 }
