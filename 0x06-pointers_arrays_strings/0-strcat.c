@@ -3,25 +3,24 @@
  * _strcat - a function that concatenates two strings.
  * @src: a source string
  * @dest: a destination string
- * Return: return dest string
+ * Return: return dest strinig
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0;
+	int i = 0, j;
 
-	while (src[i] != '\0')
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
 
-	while (dest[j] != '\0')
+	for (j = 0; j <= i; j++)
 	{
-		dest[i] = src[j];
+		dest[i + j] = src[j];
 
-		i++;
-		j++;
 	}
+	dest[i + j] = '\0';
 
 	return (dest);
 }
