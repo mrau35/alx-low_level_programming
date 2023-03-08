@@ -13,12 +13,9 @@ int pal_chk(char *s, int li, int ri);
 
 int is_palindrome(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
+	i = _strlen_recursion(s);
 	return (pal_chk(s, 0, i - 1));
 }
 
@@ -45,4 +42,20 @@ int pal_chk(char *s, int li, int ri)
 		return (pal_chk(s, li + 1, ri - 1));
 	}
 	return (0);
+}
+
+/**
+ * _strlen_recursion - a function that returns the length of a string.
+ * @s: a string input
+ * Return: return length of the string
+ */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	s++;
+	return (_strlen_recursion(s) + 1);
 }
