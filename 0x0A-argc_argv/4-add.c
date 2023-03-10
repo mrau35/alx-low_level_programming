@@ -4,8 +4,8 @@
 #include <string.h>
 /**
  * main - a program that prints its name, followed by a new line.
- * @argc: contains the number of arguments passed to the program.
- * @argv: a one-dimensional array of strings. Each string is
+ * checker - a program that checks where the input is number or not.
+ * @s: user input arguments
  * one of the arguments.
  * Return: always 0 (success)
  */
@@ -34,15 +34,13 @@ int main(int argc, char *argv[])
 
 /**
  * checker - a program that checks where the input is number or not.
- * @argc: contains the number of arguments passed to the program.
- * @argv: a one-dimensional array of strings. Each string is
- * one of the arguments.
+ * @s: user input arguments
  * Return: 0 if all arguments are numbers otherwise 1.
  */
 
 int checker(char *s)
 {
-	long unsigned int i;
+	unsigned int i;
 
 	for (i = 0; i < strlen(s); i++)
 	{
