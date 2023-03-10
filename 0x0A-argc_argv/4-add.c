@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - a program that prints its name, followed by a new line.
  * @argc: contains the number of arguments passed to the program.
@@ -8,30 +10,25 @@
  * Return: always 0 (success)
  */
 
-int checker(int argc, char *argv[]);
+int checker(char *s);
 
 int main(int argc, char *argv[])
 {
-	int i, flag, res = 0;
+	int c, res = 0;
 
-	flag = checker(argc, argv);
-
-	if (argc == 1)
+	for (c = 1; c < argc; c++)
 	{
-		printf("%d\n", 0);
-	}
-	if (flag == 1)
-	{
-		printf("Error\n");
-	}
-	else if (flag == 0)
-	{
-		for (i = 1; i < argc; i++)
+		if (checker(argv[c]))
 		{
-			res = res + atoi(argv[i]);
+			res = res + atoi(argv[c]);
 		}
-		printf("%d\n", res);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
+	printf("%d\n", res);
 	return (0);
 }
 
@@ -43,22 +40,16 @@ int main(int argc, char *argv[])
  * Return: 0 if all arguments are numbers otherwise 1.
  */
 
-int checker(int argc, char *argv[])
+int checker(char *s)
 {
-	int i, flag;
-	char *next;
+	long unsigned int i;
 
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < strlen(s); i++)
 	{
-		strtol(argv[i], &next, 10);
-		if ((next == argv[i]) || (*next != '\0'))
+		if (!isdigit(s[i]))
 		{
-			flag = 1;
-		}
-		else
-		{
-			flag = 0;
+			return (0);
 		}
 	}
-	return (flag);
+	return (1);
 }
