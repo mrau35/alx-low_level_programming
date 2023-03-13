@@ -21,12 +21,18 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		ar = malloc(size * sizeof(char));
-
-		for (i = 0; i < size; i++)
+		if (ar)
 		{
-			ar[i] = c;
+			for (i = 0; i < size; i++)
+			{
+				ar[i] = c;
+			}
+			return (ar);
 		}
-		return (ar);
+		else
+		{
+			return (NULL);
+		}
 	}
 	return (NULL);
 }
