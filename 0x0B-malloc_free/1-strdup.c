@@ -22,10 +22,10 @@ char *_strdup(char *str)
 		{
 			j++;
 		}
-		ar = malloc(j * sizeof(char));
+		ar = malloc(j * sizeof(char) + 1);
 		if (ar)
 		{
-			for (i = 0; i <= j; i++)
+			for (i = 0; i < j; i++)
 			{
 				ar[i] = str[i];
 			}
