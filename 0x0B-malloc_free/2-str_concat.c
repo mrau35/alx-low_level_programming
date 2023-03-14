@@ -9,11 +9,17 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
-	int sum = 0;
+	int i = 0, j = 0, sum = 0;
 	char *ar;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	while (s1[j] != '\0')
 	{
 		j++;
